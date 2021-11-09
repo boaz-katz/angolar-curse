@@ -1,0 +1,34 @@
+<nav class="navbar navbar-default">
+  <div class="container-fluid">
+    <div class="navbar-header">
+      <a harf="#" class="navbar-brand">Recipi book</a>
+    </div>
+    <!-- <div class="navbar-header">
+      <button type="button" class="navbar-toggle" (click)="collapsed = !collapsed">
+      <span class="icon-bar" *ngFor="let iconBar of [1, 2, 3]"></span>
+      </button>
+      <a routerLink="/" class="navbar-brand">Recipe Book</a>
+    </div>
+    <div class="navbar-collapse" [class.collapse]="collapsed" (window:resize)="collapsed = true"> -->
+
+    <div class="navbar-default">
+      <ul class="nav navbar-nav">
+        <li><a (click)="navigatorfunc('app-recipes')">recipes</a></li>
+        <li>
+          <a (click)="navigatorfunc('app-shopping-list')"> shoping list</a>
+        </li>
+      </ul>
+      <ul class="nav navbar-nav navbar-right">
+        <li class="dropdown">
+          <a href="#" class="dropdown-toggole" role="button"
+            >Manage <span class="caret"></span>
+          </a>
+          <ul class="dropdwon-menu">
+            <li><a href="#"></a> seve</li>
+            <li><a href="#"></a> fatch</li>
+          </ul>
+        </li>
+      </ul>
+    </div>
+  </div>
+</nav>

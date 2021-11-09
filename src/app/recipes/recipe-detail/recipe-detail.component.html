@@ -1,0 +1,36 @@
+<div class="row">
+  <div class="col-xs-12">
+    <img
+      src="{{ recipeditel.imagePath }}"
+      alt="{{ recipeditel.name }}"
+      class="img-responsive"
+      style="max-height: 300px"
+    />
+  </div>
+</div>
+<div class="row">
+  <div class="col-xs-12">
+    <h1>{{ recipeditel.name }}</h1>
+  </div>
+</div>
+<div class="row">
+  <div class="col-xs-12">
+    <div class="btn-group">
+      <button type="button" class="btn btn-primary dropdwon-toggle">
+        Manege recipe
+        <span class="caret"></span>
+      </button>
+      <ul class="dropdwon-menu">
+        <li href="#">to shoping list</li>
+        <li href="#">edit</li>
+        <li href="#">delete</li>
+      </ul>
+    </div>
+  </div>
+</div>
+<div class="row">
+  <div class="col-xs-12">{{ recipeditel.descripton }}</div>
+</div>
+<div class="row">
+  <div class="col-xs-12">ingredients</div>
+</div>
