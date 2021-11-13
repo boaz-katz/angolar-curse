@@ -5,10 +5,11 @@
 <div class="continer">
   <div class="row">
     <div class="col-md-12">
-      <app-recipes *ngIf="lodepge === 'app-recipes'"></app-recipes>
-      <app-shopping-list
+      <router-outlet></router-outlet>
+      <!-- <app-recipes *ngIf="lodepge === 'app-recipes'"></app-recipes> -->
+      <!-- <app-shopping-list
         *ngIf="lodepge === 'app-shopping-list'"
-      ></app-shopping-list>
+      ></app-shopping-list> -->
     </div>
   </div>
 </div>

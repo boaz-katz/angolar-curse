@@ -17,7 +17,7 @@ export class RecipeListComponent implements OnInit {
     new Recipe(
       'test recipe 2',
       'this is simply test 2',
-      'https://cdn.pixabay.com/photo/2016/06/15/19/09/food-1459693_960_720.jpg'
+      'https://cdn.pixabay.com/photo/2021/08/14/14/30/anemone-6545519_960_720.jpg'
     ),
   ];
   @Output() chusenrecipe = new EventEmitter<Recipe>();

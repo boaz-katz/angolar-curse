@@ -12,6 +12,8 @@ import { ShoppingListComponent } from './shopping-list/shopping-list.component';
 import { ShoppingEditComponent } from './shopping-list/shopping-edit/shopping-edit.component';
 import { FormsModule } from '@angular/forms';
 import { Bisickhilitest } from './bisickdirectiv.directive';
+import { DropdoweDirective } from './dropdowe.directive';
+import { ModalPopComponent } from './modal-pop/modal-pop.component';
 @NgModule({
   declarations: [
     AppComponent,
@@ -23,6 +25,8 @@ import { Bisickhilitest } from './bisickdirectiv.directive';
     ShoppingListComponent,
     ShoppingEditComponent,
     Bisickhilitest,
+    DropdoweDirective,
+    ModalPopComponent,
   ],
   imports: [BrowserModule, AppRoutingModule, FormsModule],
   providers: [],

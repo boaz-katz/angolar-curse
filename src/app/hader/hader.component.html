@@ -13,18 +13,23 @@
 
     <div class="navbar-default">
       <ul class="nav navbar-nav">
-        <li><a (click)="navigatorfunc('app-recipes')">recipes</a></li>
+        <!-- <li><a (click)="navigatorfunc('app-recipes')">recipes</a></li>
         <li>
           <a (click)="navigatorfunc('app-shopping-list')"> shoping list</a>
+        </li> -->
+        <li><a routerLink="/recipes">recipes</a></li>
+        <li>
+          <a routerLink="/shuping-list"> shoping list</a>
         </li>
       </ul>
       <ul class="nav navbar-nav navbar-right">
-        <li class="dropdown">
+        <li class="dropdown" appDropdowe #r="appDropdowe">
           <a href="#" class="dropdown-toggole" role="button"
             >Manage <span class="caret"></span>
           </a>
-          <ul class="dropdwon-menu">
-            <li><a href="#"></a> seve</li>
+
+          <ul class="dropdown-menu" [ngClass]="{ show: r.isOpen }">
+            <li><a class="menu-item" href="#"></a> seve</li>
             <li><a href="#"></a> fatch</li>
           </ul>
         </li>

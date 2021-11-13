@@ -10,17 +10,22 @@
 </div>
 <div class="row">
   <div class="col-xs-12">
-    <h1>{{ recipeditel.name }}</h1>
+    <h1>{{ recipeditel.descripton }}</h1>
   </div>
 </div>
 <div class="row">
   <div class="col-xs-12">
     <div class="btn-group">
-      <button type="button" class="btn btn-primary dropdwon-toggle">
+      <button
+        type="button"
+        class="btn btn-primary dropdwon-toggle"
+        appDropdowe
+        #r="appDropdowe"
+      >
         Manege recipe
         <span class="caret"></span>
       </button>
-      <ul class="dropdwon-menu">
+      <ul class="dropdown-menu" [ngClass]="{ show: r.isOpen }">
         <li href="#">to shoping list</li>
         <li href="#">edit</li>
         <li href="#">delete</li>
@@ -28,9 +33,7 @@
     </div>
   </div>
 </div>
-<div class="row">
-  <div class="col-xs-12">{{ recipeditel.descripton }}</div>
-</div>
+
 <div class="row">
   <div class="col-xs-12">ingredients</div>
 </div>
